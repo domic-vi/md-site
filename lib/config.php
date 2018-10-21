@@ -2,5 +2,5 @@
 
 /** WebRoot of the .md tree **/
 
-define('ICWIK_PATH', '/info-api-wiki');
+define('ICWIK_PATH', '/wiki');
 
