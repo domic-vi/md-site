@@ -1,0 +1,13 @@
+Options -Indexes
+
+RewriteEngine On
+
+RewriteRule ^[^\/]+\.(md)$ - [F,L]
+
+RewriteRule ^(.*)\/$ %{REQUEST_URI}Home [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule . lib/md-viewer.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . lib/md-viewer.php [L]
